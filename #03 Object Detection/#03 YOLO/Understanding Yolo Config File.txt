@@ -1,0 +1,28 @@
+- Max_batches = 6000 
+	- Total number of Iteration of Model Trainig.
+	- Max_batches = (num_classes * 2000)
+	- Minimum value is 6000 if the num_classes is 1 or 2 or 3. 
+          If the num_classes is more than three then it would be of (num_classes * 2000)
+- steps
+	- Steps : (80%,90% of Max Batches)
+	- Adjust the learning rate after 4800 and 4800 batches
+	  steps = 4800,5400 (4800 is the 80% of the 6000(Max_batches) and 5400 is the 90% of the 6000 (Max_batches))
+- Batch:
+	- Number of images processed in one batch during one iteration
+
+- Subdivision
+	- Number of Mini batches In one batch
+
+- scales=0.1,0.2
+	- After 4800 (Steps), multiply the LR by 0.1, then after 5400(Steps) multiply again by 0.2
+
+- angle: augment image by rotation up to this angle (in degree)
+
+- policy=steps
+	- Use the steps and scales parameters below to adjust the learning rate during training	
+
+
+- filters: How many convolutional kernels there are in a layer
+	- filters = (num_classes + 5) * 3
+
+- activation: Activation function, relu, leaky relu, etc. See src/activations.h
