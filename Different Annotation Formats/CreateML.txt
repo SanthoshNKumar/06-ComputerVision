@@ -1,0 +1,25 @@
+[
+    {
+        "image": "0001.jpg",
+        "annotations": [
+            {
+                "label": "helmet",
+                "coordinates": {
+                    "x": 162.5,
+                    "y": 45,
+                    "width": 79,
+                    "height": 88
+                }
+            },
+            {
+                "label": "person",
+                "coordinates": {
+                    "x": 145.5,
+                    "y": 176,
+                    "width": 251,
+                    "height": 350
+                }
+            }
+        ]
+    }
+]
